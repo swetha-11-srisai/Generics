@@ -22,5 +22,21 @@ namespace Generics
             }
 
         }
+        public void CheckMaxNumber(double first, double second, double third)
+        {
+            if (first.CompareTo(second) < 0 && first.CompareTo(third) < 0)
+            {
+                Console.WriteLine("First Number is greater");
+            }
+            if (second.CompareTo(third) > 0)
+            {
+                Console.WriteLine("Second Number is greater");
+            }
+            else
+            {
+                Console.WriteLine("Third Number is greater");
+            }
+
+        }
     }
 }
