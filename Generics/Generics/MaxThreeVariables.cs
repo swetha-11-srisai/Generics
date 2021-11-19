@@ -50,7 +50,7 @@ namespace Generics
             }
             else
             {
-                Console.WriteLine("String Three is greater");
+                Console.WriteLine("String Three is  greater");
             }
 
         }
