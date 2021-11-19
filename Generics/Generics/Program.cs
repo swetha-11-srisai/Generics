@@ -10,7 +10,7 @@ namespace Generics
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-Maxintegernumbers,2-Maxfloatnumber,3-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-Maxintegernumbers,2-Maxfloatnumber,3-Maxstrings,4-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -29,6 +29,13 @@ namespace Generics
                         max.CheckMaxNumber(first, second, third);
                         break;
                     case 3:
+                        Console.WriteLine("Enter the string values:");
+                        string firstNum = Convert.ToString(Console.ReadLine());
+                        string secondNum = Convert.ToString(Console.ReadLine());
+                        string thirdNum = Convert.ToString(Console.ReadLine());
+                        max.CheckMaxNumber(firstNum, secondNum, thirdNum);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
