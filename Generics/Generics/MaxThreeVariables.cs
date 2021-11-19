@@ -38,5 +38,21 @@ namespace Generics
             }
 
         }
+        public void CheckMaxNumber(string firstNum,string secondNum,string thirdNum)
+        {
+            if (firstNum.CompareTo(secondNum) < 0 && firstNum.CompareTo(thirdNum) < 0)
+            {
+                Console.WriteLine("String One is greater");
+            }
+            if (secondNum.CompareTo(thirdNum) > 0)
+            {
+                Console.WriteLine("String Two is greater");
+            }
+            else
+            {
+                Console.WriteLine("String Three is greater");
+            }
+
+        }
     }
 }
