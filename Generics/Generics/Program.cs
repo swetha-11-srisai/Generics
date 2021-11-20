@@ -34,8 +34,7 @@ namespace Generics
                         string thirdNumbr = Convert.ToString(Console.ReadLine());
                         MaxThreeVariables.CheckMaxNumber(firstNumbr, secondNumbr, thirdNumbr);
                         break;
-
-                    case 4:
+                      case 4:
                         flag = false;
                         break;
                 }
