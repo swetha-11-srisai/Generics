@@ -6,7 +6,6 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            MaxThreeVariables max = new MaxThreeVariables();
             bool flag = true;
             while(flag)
             {
@@ -16,25 +15,26 @@ namespace Generics
                 {
                     case 1:
                         Console.WriteLine("Enter the integer values:");
-                        int firstNumber = Convert.ToInt32(Console.ReadLine());
-                        int secondNumber = Convert.ToInt32(Console.ReadLine());
-                        int thirdNumber = Convert.ToInt32(Console.ReadLine());
-                        max.CheckMaxNumber(firstNumber,secondNumber,thirdNumber);
+                        int firstNum = Convert.ToInt32(Console.ReadLine());
+                        int secondNum = Convert.ToInt32(Console.ReadLine());
+                        int thirdNum = Convert.ToInt32(Console.ReadLine());
+                        MaxThreeVariables.CheckMaxNumber(firstNum,secondNum,thirdNum);
                         break;
                     case 2:
                         Console.WriteLine("Enter the float values:");
-                        double first = Convert.ToDouble(Console.ReadLine());
-                        double second = Convert.ToDouble(Console.ReadLine());
-                        double third = Convert.ToDouble(Console.ReadLine());
-                        max.CheckMaxNumber(first, second, third);
+                        double firstNumb = Convert.ToDouble(Console.ReadLine());
+                        double secondNumb = Convert.ToDouble(Console.ReadLine());
+                        double thirdNumb = Convert.ToDouble(Console.ReadLine());
+                        MaxThreeVariables.CheckMaxNumber(firstNumb, secondNumb, thirdNumb);
                         break;
                     case 3:
                         Console.WriteLine("Enter the string values:");
-                        string firstNum = Convert.ToString(Console.ReadLine());
-                        string secondNum = Convert.ToString(Console.ReadLine());
-                        string thirdNum = Convert.ToString(Console.ReadLine());
-                        max.CheckMaxNumber(firstNum, secondNum, thirdNum);
+                        string firstNumbr = Convert.ToString(Console.ReadLine());
+                        string secondNumbr = Convert.ToString(Console.ReadLine());
+                        string thirdNumbr = Convert.ToString(Console.ReadLine());
+                        MaxThreeVariables.CheckMaxNumber(firstNumbr, secondNumbr, thirdNumbr);
                         break;
+
                     case 4:
                         flag = false;
                         break;
